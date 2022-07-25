@@ -37,6 +37,5 @@ jobs:
       run: |
         pipenv run pytest --cov=pypro
     - name: Relatorio Codecov
-      uses: codecov/codecov-action@v3
-      with:
-        token: ${{ secrets.TOKEN_CURSODJANGODEVPRO}}
+      run: |
+        pipenv run codecov
